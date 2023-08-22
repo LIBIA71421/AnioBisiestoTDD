@@ -47,3 +47,15 @@ describe("Es Bisiesto 4", () => {
     expect(esBisiesto(2016)).toEqual(true);
   });
 });
+
+describe("No es Bisiesto 4", () => {
+  it("El 2017 no deberia considerarse como año bisiesto", () => {
+    expect(esBisiesto(2017)).toEqual(false);
+  });
+  it("El 2018 no deberia considerarse como año bisiesto", () => {
+    expect(esBisiesto(2018)).toEqual(false);
+  });
+  it("El 2019 no deberia considerarse como año bisiesto", () => {
+    expect(esBisiesto(2019)).toEqual(false);
+  });
+});
